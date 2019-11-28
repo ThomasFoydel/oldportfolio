@@ -1,0 +1,27 @@
+$break-large: 1400px;
+$break-medium: 1200px;
+$break-small: 1041px;
+
+.githubcard {
+  width: 29vw;
+  height: 26vw;
+  background-position: center center;
+  box-shadow: 0px 10px 30px -5px rgba(0, 0, 0, 0.3);
+  transition: box-shadow 0.5s;
+  will-change: transform;
+  background-image: url('../../img/githublarge3.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  border: 0.4rem solid rgba(255, 255, 255, 0.2);
+
+  min-width: 20rem;
+  min-height: 19rem;
+  // @media screen and (max-width: $break-small) {
+  //   margin-left: -1.8rem;
+  // }
+}
+
+.githubcard:hover {
+  box-shadow: 0px 30px 100px -10px rgba(0, 0, 0, 0.4);
+  cursor: pointer;
+}

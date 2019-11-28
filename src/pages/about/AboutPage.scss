@@ -1,0 +1,42 @@
+.aboutparagraph {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  background: rgba(12, 12, 12, 0.555);
+  color: rgb(255, 255, 255);
+  top: 8rem;
+  padding: 4rem;
+  min-width: 80vw;
+  min-height: 75vh;
+  max-height: 75vh;
+  font-size: 2.8rem;
+  border: 1px solid rgba(255, 255, 255, 0.401);
+  letter-spacing: 0.1rem;
+  font-weight: 400;
+  text-align: center;
+  overflow: auto;
+  backdrop-filter: blur(0.2rem);
+  box-shadow: 2rem 2rem 2rem rgba(20, 20, 20, 0.514);
+  cursor: default;
+}
+
+.aboutpage-backgroundimage {
+  width: 100vw;
+  height: 100vh;
+  background-size: cover;
+  background-image: linear-gradient(
+      to top,
+      rgba(0, 0, 0, 0.4),
+      rgba(0, 0, 0, 0)
+    ),
+    url('../../img/bjj.jpg');
+}
+
+.aboutpage-projectslink {
+  color: rgb(255, 133, 133);
+  text-decoration: underline;
+  transition: color 0.18s cubic-bezier(0.39, 0.575, 0.565, 1);
+  &:hover {
+    color: rgb(255, 27, 27);
+  }
+}

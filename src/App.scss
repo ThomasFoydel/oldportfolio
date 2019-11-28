@@ -1,0 +1,59 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+  top: 0;
+  // overflow: hidden;
+  // height: 100%;
+}
+
+body {
+  font-family: 'Rubik', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.7;
+  box-sizing: border-box;
+  background: rgb(245, 245, 245);
+  // height: 100%;
+  // overflow: scroll;
+}
+
+html,
+body {
+  overscroll-behavior: none;
+}
+
+button:focus,
+textarea:focus,
+input:focus {
+  outline: none;
+}
+
+a {
+  text-decoration: none;
+
+  color: inherit;
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+.hover-pointer {
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.flex {
+  display: flex;
+}
+
+.container-fluid {
+  width: 100%;
+}

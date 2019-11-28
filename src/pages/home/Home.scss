@@ -1,0 +1,150 @@
+$break-large: 1400px;
+$break-medium: 1200px;
+$break-small: 1041px;
+
+.home-container {
+  min-height: 100vh;
+  background-image: linear-gradient(
+      180deg,
+      rgba(221, 247, 251, 0) 0%,
+      rgba(0, 0, 0, 0.18) 50%,
+      rgba(0, 0, 0, 0.4) 80%
+    ),
+    url('../../img/homebackgroundbw.jpg');
+  background-size: cover;
+  background-position: absolute;
+  clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+  color: #fff;
+  z-index: 4;
+  position: relative;
+
+  @media screen and (max-width: $break-small) {
+    min-height: 150vh;
+    clip-path: polygon(0 0, 100% 0, 100% 125vh, 0 100%);
+  }
+}
+
+.home-infocontainer {
+  position: fixed;
+  margin-left: 50%;
+  transform: translateX(-50%);
+  width: 50rem;
+  @media screen and (max-width: $break-small) {
+    position: relative;
+  }
+}
+
+.home-profilephotocontainer {
+  height: 27rem;
+  width: 27rem;
+  border-radius: 999px;
+  background: black;
+  color: white;
+  text-align: center;
+  margin-top: 4rem;
+  margin-left: 11.5rem;
+
+  .home-profilephototext {
+    opacity: 0;
+    transition: opacity 1.1s cubic-bezier(0.6, -0.28, 0.735, 0.045);
+  }
+  &:hover {
+    .home-profilephototext {
+      opacity: 1;
+    }
+  }
+}
+
+.home-profilephoto {
+  border-radius: 999px;
+  border: 1.3rem solid rgb(236, 236, 236);
+  height: 27rem;
+  width: 27rem;
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.home-profilephototext {
+  top: 14.6rem;
+  position: absolute;
+  font-size: 3.2rem;
+  letter-spacing: 0.8rem;
+  left: 15.5rem;
+  color: rgb(255, 255, 255);
+}
+
+.home-name,
+.home-jobtitle,
+.home-email,
+.home-githublink {
+  margin-left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+}
+
+.home-name {
+  font-size: 6.2rem;
+  width: 60rem;
+  font-weight: 400;
+  cursor: default;
+  text-align: center;
+  margin-right: -0.7rem;
+  letter-spacing: 0.7rem;
+  @media screen and (max-width: $break-large) {
+    font-size: 5rem;
+  }
+  @media screen and (max-width: $break-medium) {
+    font-size: 4rem;
+  }
+  @media screen and (max-width: $break-small) {
+    font-size: 3rem;
+  }
+}
+
+.home-jobtitle {
+  margin-top: -2rem;
+  font-size: 2.8rem;
+  text-align: center;
+  width: 30rem;
+  margin-right: -0.5rem;
+  letter-spacing: 0.5rem;
+}
+
+.home-email {
+  margin-top: -0.6rem;
+  font-size: 2.2rem;
+  width: 35rem;
+  letter-spacing: 0.3rem;
+  font-weight: 400;
+}
+
+.githubcard-container {
+  position: absolute;
+  top: 14rem;
+  right: 4rem;
+
+  @media screen and (max-width: $break-small) {
+    top: 70rem;
+    left: 50%;
+    transform: translateX(-50%);
+    right: inherit;
+  }
+}
+
+.homecontact-container {
+  height: 95vh;
+  background-image: linear-gradient(
+      180deg,
+      rgba(221, 247, 251, 0) 0%,
+      rgba(0, 0, 0, 0.18) 50%,
+      rgba(0, 0, 0, 0.4) 80%
+    ),
+    url('../../img/homebackgroundbw.jpg');
+  background-size: cover;
+  background-position: absolute;
+  clip-path: polygon(0 23vh, 100% 0, 100% 72vh, 0 100%);
+  color: #fff;
+  z-index: 1;
+}
