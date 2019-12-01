@@ -49,7 +49,7 @@ const IndividualProjectPage = ({ match }) => {
       {!displayInfoBar && (
         <animated.div style={reverseAnimationProps}>
           <div
-            className='socialmedia-showsidebarbutton'
+            className='individualprojectpage-showsidebarbutton'
             onClick={() => setDisplayInfoBar(true)}
           >
             show sidebar
