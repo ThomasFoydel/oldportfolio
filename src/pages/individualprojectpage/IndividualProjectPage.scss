@@ -1,0 +1,165 @@
+.individualprojectpagecontainer {
+  text-align: center;
+  margin-left: 50%;
+  transform: translateX(-50%);
+  width: 100vw;
+  max-height: 30rem !important;
+  overflow: hidden;
+  min-height: 95vh;
+  margin-top: 3rem;
+  background-size: cover;
+  background-position: center;
+}
+
+.socialmediabackground {
+  background-image: linear-gradient(
+      180deg,
+      rgba(221, 247, 251, 0) 0%,
+      rgba(0, 0, 0, 0.18) 60%,
+      rgba(0, 0, 0, 0.4) 90%
+    ),
+    url('../../img/socialmediascreencapture.gif');
+}
+
+.chatappbackground {
+  background-image: linear-gradient(
+      180deg,
+      rgba(221, 247, 251, 0) 0%,
+      rgba(0, 0, 0, 0.18) 60%,
+      rgba(0, 0, 0, 0.4) 90%
+    ),
+    url('../../img/chatappscreencap.gif');
+}
+
+.individualprojectpage-innercontainer {
+  background: rgba(255, 255, 255, 0.81);
+  backdrop-filter: blur(0.1rem);
+  color: rgb(8, 8, 8);
+  width: 45%;
+  min-width: 35rem;
+  min-height: 95vh;
+  max-height: 95vh;
+  overflow-y: auto;
+  padding-left: 5rem;
+  padding-right: 2rem;
+  overflow-x: hidden;
+}
+
+.individualprojectpagetitle {
+  font-size: 4rem;
+  letter-spacing: 0.5rem;
+  font-weight: 700;
+  // color: rgb(17, 134, 243);
+  color: #222;
+  line-height: 4.3rem;
+
+  transition: color 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55),
+    letter-spacing 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+
+  &:hover {
+    color: #c01a1a;
+    letter-spacing: 0.6rem;
+  }
+  &:active {
+    color: rgb(183, 200, 207);
+  }
+}
+
+.individualprojectpageline {
+  width: 38vw;
+  margin-left: 50%;
+  margin-top: 0.4rem;
+  transform: translateX(-50%);
+}
+
+.individualprojectpagedescription {
+  font-size: 1.8rem;
+  min-width: 30rem;
+  text-align: left;
+  transform: translateX(-50%);
+  margin-left: 50%;
+  //   display: flex;
+}
+.individualprojectpagefeatures,
+.individualprojectpagetechnologies {
+  line-height: 3rem;
+}
+.individualprojectpagetechnologies {
+  margin-top: 3rem;
+  margin-bottom: 4.5rem;
+}
+
+.individualprojectpagefeatures {
+  margin-top: 1rem;
+}
+
+.individualprojectpagefeaturelist,
+.individualprojectpagetechnologylist {
+  font-size: 1.5rem;
+  text-decoration: none;
+  list-style: none;
+  line-height: 2.4rem;
+}
+
+.individualprojectpagefeaturelist {
+  margin-bottom: 2rem;
+  margin-top: 0.5rem;
+  padding: 0 1rem;
+}
+
+.individualprojectpagetechnologylist {
+  padding: 0 1rem;
+  text-align: start;
+}
+
+.individualprojectpage-githublink,
+.individualprojectpage-herokulink {
+  margin-right: 2.3rem;
+  width: 13rem;
+  img {
+    height: 14rem;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    cursor: pointer;
+  }
+  h4 {
+    margin-left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    width: 13rem;
+    transition: color 0.2s;
+    cursor: pointer;
+  }
+
+  &:hover {
+    h4 {
+      color: rgb(209, 16, 16);
+    }
+  }
+}
+
+.githubandherokucontainer {
+  display: flex;
+  height: 16rem;
+}
+
+.linkicon-linktitle {
+  position: relative;
+  top: 15rem;
+  width: 14.3rem;
+}
+
+.individualprojectpage-hidesidebarbutton {
+  background: rgba(250, 250, 250, 0.25);
+  border-radius: 0.1rem;
+  padding: 0.4rem;
+  //   display: block;
+  transition: color 0.2s, background 0.2s;
+  font-size: 1.2rem;
+  //   float: right;
+  cursor: pointer;
+  &:hover {
+    background: rgba(177, 52, 52, 0.719);
+    color: rgb(241, 241, 241);
+  }
+}

@@ -7,6 +7,7 @@ import SocialMediaProjectPage from 'components/socialmediaprojectpage/SocialMedi
 import ChatAppProjectPage from 'components/chatappprojectpage/ChatAppProjectPage';
 import AboutPage from 'pages/about/AboutPage';
 import ProjectPage from 'components/projectpage/ProjectPage';
+import IndividualProjectPage from 'pages/individualprojectpage/IndividualProjectPage';
 
 import './App.scss';
 import { useTransition, animated, config } from 'react-spring';
@@ -49,6 +50,7 @@ function App() {
               <Route exact path='/contact' component={Contact} />
               <Route exact path='/about' component={AboutPage} />
               <Route path='/projects' component={ProjectPage} />
+              <Route path='/project/:page' component={IndividualProjectPage} />
               <Route
                 exact
                 path='/socialmediaapp'

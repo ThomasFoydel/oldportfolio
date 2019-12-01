@@ -48,7 +48,7 @@ const ProjectPage = () => {
         <div className='projectpage-grid'>
           <div className='projectpage-grid-title'>recent projects</div>
 
-          <Link to='/socialmediaapp'>
+          <Link to='/project/socialmediaapp'>
             <animated.div
               style={fadeInProps}
               onMouseEnter={handleSocialMediaEnter}
@@ -63,7 +63,7 @@ const ProjectPage = () => {
               <AppCard cardClass='socialmediacard' hover={socialMediaHover} />
             </animated.div>
           </Link>
-          <Link to='/chatapp'>
+          <Link to='/project/chatapp'>
             <animated.div
               className='projectpage-gridproject2'
               onMouseEnter={handlePlaceholderEnter}

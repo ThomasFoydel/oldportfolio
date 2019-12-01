@@ -51,9 +51,9 @@ const Contact = () => {
         <li className='contact-listitem'>
           <IndividualContact contact='other'></IndividualContact>
         </li>
-        <li className='contact-listitem'>
+        {/* <li className='contact-listitem'>
           <IndividualContact contact='other'></IndividualContact>
-        </li>
+        </li> */}
       </ul>
     </div>
   );
