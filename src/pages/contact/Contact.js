@@ -43,17 +43,26 @@ const Contact = () => {
       </Spring>
       <ul className='contact-list'>
         <li className='contact-listitem'>
-          <IndividualContact contact='linkedin'></IndividualContact>
+          <a
+            href='https://www.linkedin.com/in/thomas-foydel-63aa74110/'
+            target='_blank'
+            rel='noopener noreferrer'
+          >
+            <IndividualContact contact='linkedin'></IndividualContact>
+          </a>
         </li>
         <li className='contact-listitem'>
-          <IndividualContact contact='github'></IndividualContact>
+          <a
+            href='https://github.com/ThomasFoydel/'
+            target='_blank'
+            rel='noopener noreferrer'
+          >
+            <IndividualContact contact='github'></IndividualContact>
+          </a>
         </li>
         <li className='contact-listitem'>
           <IndividualContact contact='other'></IndividualContact>
         </li>
-        {/* <li className='contact-listitem'>
-          <IndividualContact contact='other'></IndividualContact>
-        </li> */}
       </ul>
     </div>
   );

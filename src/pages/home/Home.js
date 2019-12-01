@@ -31,7 +31,7 @@ const Home = () => {
               <ProjectCard />
             </div>
           </Link>
-          <a href='http://github.com/thomasfoydel'>
+          <a href='https://github.com/ThomasFoydel'>
             <div className='githubcard-container'>
               <GitHubCard />
             </div>

@@ -26,11 +26,10 @@ $break-small: 1041px;
     url('../../img/homebackground3bw.jpg');
   background-size: cover;
   background-position: absolute;
-  clip-path: polygon(0 20vh, 100% 0, 100% 80vh, 0 100%);
+  clip-path: polygon(0 0vh, 100% 0, 100% 80vh, 0 100%);
   color: #fff;
   padding: 0 3rem 0 3rem;
   z-index: 2;
-  // position: absolute;
 }
 
 .socialmediacard-container {
@@ -77,13 +76,9 @@ $break-small: 1041px;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(2, 1fr);
   grid-column-gap: 0px;
-  // grid-row-gap: 10rem;
-
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
-  // height: 60rem;
-  // position: fixed !important;
   top: 25rem;
   z-index: 8;
 }
