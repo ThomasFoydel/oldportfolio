@@ -162,10 +162,10 @@
 
 .individualprojectpage-showsidebarbutton {
   position: fixed;
-  top: 3rem;
+  top: 50%;
   color: rgb(240, 240, 240);
   font-weight: 500;
-  background: rgba(243, 243, 243, 0.308);
+  background: rgba(14, 14, 14, 0.558);
   text-shadow: 0.4rem 0.4rem 0.4rem #444;
   border: 1px solid rgba(243, 243, 243, 0.797);
   border-radius: 0rem 1rem 1rem 0rem;
@@ -176,9 +176,9 @@
   letter-spacing: 0rem;
   transition: color 0.3s, background 0.3s, letter-spacing 0.3s;
   &:hover {
-    background: rgba(158, 158, 158, 0.856);
-    text-shadow: none;
+    background: rgba(27, 27, 27, 0.956);
+    text-shadow: 0.2rem 0.2rem 0.2rem #222;
     color: rgb(255, 255, 255);
-    letter-spacing: 0.1rem;
+    letter-spacing: 0.2rem;
   }
 }
