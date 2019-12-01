@@ -2,6 +2,10 @@ import React, { useState, useEffect, useContext } from 'react';
 import { useSpring, animated, config } from 'react-spring';
 import IndividualProjectData from 'pages/individualprojectpage/IndividualProjectData';
 import LinkIcon from 'pages/individualprojectpage/LinkIcon';
+import ReactIcon from 'img/reacticon.png';
+import MongoDBIcon from 'img/mongodbicon.svg';
+import NodeIcon from 'img/nodeicon.svg';
+import SocketIOIcon from 'img/socketioicon.svg';
 
 import { CTX } from 'context/Store';
 
@@ -108,6 +112,24 @@ const IndividualProjectPage = ({ match }) => {
                       <li key={feature}>{feature}</li>
                     ))}
                   </ul>
+                </div>
+                <div className='individualprojectpage-iconcontainer'>
+                  <img
+                    style={{ height: '5rem', marginRight: '-1.5rem' }}
+                    src={ReactIcon}
+                  />
+                  <img
+                    style={{ height: '5rem', marginRight: '.5rem' }}
+                    src={MongoDBIcon}
+                  />
+                  <img
+                    style={{ height: '5rem', marginRight: '1.5rem' }}
+                    src={NodeIcon}
+                  />
+                  <img
+                    style={{ height: '5rem', marginRight: '1rem' }}
+                    src={SocketIOIcon}
+                  />
                 </div>
               </div>
             </div>
