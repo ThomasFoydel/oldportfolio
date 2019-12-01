@@ -3,8 +3,6 @@ import { Switch, Route, __RouterContext } from 'react-router-dom';
 import Home from 'pages/home/Home';
 import Contact from 'pages/contact/Contact';
 import NavBar from 'components/navbar/NavBar';
-import SocialMediaProjectPage from 'components/socialmediaprojectpage/SocialMediaProjectPage';
-import ChatAppProjectPage from 'components/chatappprojectpage/ChatAppProjectPage';
 import AboutPage from 'pages/about/AboutPage';
 import ProjectPage from 'components/projectpage/ProjectPage';
 import IndividualProjectPage from 'pages/individualprojectpage/IndividualProjectPage';
@@ -51,12 +49,6 @@ function App() {
               <Route exact path='/about' component={AboutPage} />
               <Route path='/projects' component={ProjectPage} />
               <Route path='/project/:page' component={IndividualProjectPage} />
-              <Route
-                exact
-                path='/socialmediaapp'
-                component={SocialMediaProjectPage}
-              />
-              <Route exact path='/chatapp' component={ChatAppProjectPage} />
             </Switch>
           </animated.div>
         ))}
