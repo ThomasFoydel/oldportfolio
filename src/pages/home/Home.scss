@@ -1,6 +1,9 @@
 $break-large: 1400px;
 $break-medium: 1200px;
+$break-med2: 1146px;
 $break-small: 1041px;
+$break-xs: 910px;
+$break-xxs: 650px;
 
 .home-container {
   min-height: 100vh;
@@ -13,36 +16,36 @@ $break-small: 1041px;
     url('../../img/homebackgroundbw.jpg');
   background-size: cover;
   background-position: absolute;
-  clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
   color: #fff;
-  z-index: 4;
-  position: relative;
+  overflow-x: hidden;
+  // clip-path: polygon(0 0vh, 100% 0, 100% 80vh, 0 100%);
+  // @media screen and (max-width: $break-xs) {
+  //   clip-path: none;
+  //   // min-height: 100vh;
+  // }
+}
 
-  @media screen and (max-width: $break-small) {
-    min-height: 150vh;
-    clip-path: polygon(0 0, 100% 0, 100% 125vh, 0 100%);
-  }
+.home-innercontainer {
+  // min-width: 50rem;
+  display: flex;
 }
 
 .home-infocontainer {
-  position: fixed;
   margin-left: 50%;
   transform: translateX(-50%);
   width: 50rem;
-  @media screen and (max-width: $break-small) {
-    position: relative;
-  }
 }
 
 .home-profilephotocontainer {
-  height: 27rem;
-  width: 27rem;
+  height: 26rem;
+  width: 26rem;
   border-radius: 999px;
   background: black;
   color: white;
   text-align: center;
-  margin-top: 4rem;
-  margin-left: 11.5rem;
+  margin-top: 14rem;
+  margin-left: 12rem;
+  margin-bottom: 5rem;
 
   .home-profilephototext {
     opacity: 0;
@@ -53,13 +56,16 @@ $break-small: 1041px;
       opacity: 1;
     }
   }
+  @media screen and(max-width: $break-xs) {
+    display: none;
+  }
 }
 
 .home-profilephoto {
   border-radius: 999px;
   border: 1.3rem solid rgb(236, 236, 236);
-  height: 27rem;
-  width: 27rem;
+  height: 26rem;
+  width: 26rem;
 
   &:hover {
     cursor: pointer;
@@ -67,7 +73,7 @@ $break-small: 1041px;
 }
 
 .home-profilephototext {
-  top: 14.6rem;
+  top: 25rem;
   position: absolute;
   font-size: 3.2rem;
   letter-spacing: 0.8rem;
@@ -76,12 +82,16 @@ $break-small: 1041px;
 }
 
 .home-name,
-.home-jobtitle,
-.home-email,
-.home-githublink {
+.home-email {
   margin-left: 50%;
   transform: translateX(-50%);
   text-align: center;
+  @media screen and(max-width: $break-xs) {
+    margin-top: 40rem;
+  }
+  @media screen and(max-width: $break-xxs) {
+    display: none;
+  }
 }
 
 .home-name {
@@ -98,18 +108,23 @@ $break-small: 1041px;
   @media screen and (max-width: $break-medium) {
     font-size: 4rem;
   }
-  @media screen and (max-width: $break-small) {
-    font-size: 3rem;
-  }
+  // @media screen and (max-width: $break-small) {
+  //   font-size: 4rem;
+  // }
 }
 
-.home-jobtitle {
-  margin-top: -2rem;
-  font-size: 2.8rem;
-  text-align: center;
-  width: 30rem;
-  margin-right: -0.5rem;
-  letter-spacing: 0.5rem;
+.home-cardcontainer-container {
+  // position: relative;
+  // background: blue;
+  // min-height: 100vh !important;
+  min-width: 100vw;
+  min-height: 80vh;
+  overflow: hidden;
+  @media screen and (max-width: $break-xxs) {
+    position: inherit;
+    margin-top: 10rem;
+    bottom: 6rem;
+  }
 }
 
 .home-email {
@@ -118,18 +133,8 @@ $break-small: 1041px;
   width: 35rem;
   letter-spacing: 0.3rem;
   font-weight: 400;
-}
-
-.githubcard-container {
-  position: absolute;
-  top: 14rem;
-  right: 4rem;
-
-  @media screen and (max-width: $break-small) {
-    top: 70rem;
-    left: 50%;
-    transform: translateX(-50%);
-    right: inherit;
+  @media screen and (max-width: $break-medium) {
+    font-size: 1.9rem;
   }
 }
 
@@ -147,4 +152,13 @@ $break-small: 1041px;
   clip-path: polygon(0 23vh, 100% 0, 100% 72vh, 0 100%);
   color: #fff;
   z-index: 1;
+  @media screen and (max-width: $break-xxs) {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  }
 }
+
+// * {
+//   background: #000 !important;
+//   color: #0f0 !important;
+//   outline: solid #f00 1px !important;
+// }

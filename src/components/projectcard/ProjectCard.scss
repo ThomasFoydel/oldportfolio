@@ -1,6 +1,20 @@
 $break-large: 1400px;
 $break-medium: 1200px;
 $break-small: 1041px;
+$break-xxs: 650px;
+
+.projectcard-container {
+  position: absolute;
+  top: 14rem;
+  left: 4rem;
+  min-width: 29vw;
+  height: 100px;
+  @media screen and (max-width: $break-xxs) {
+    right: auto;
+    left: 50vw;
+    transform: translateX(-50%);
+  }
+}
 
 .projectcard {
   width: 29vw;
@@ -16,6 +30,11 @@ $break-small: 1041px;
 
   min-width: 20rem;
   min-height: 19rem;
+
+  @media screen and (max-width: $break-xxs) {
+    position: absolute;
+    display: block;
+  }
 }
 
 .projectcard:hover {
