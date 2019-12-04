@@ -25,8 +25,8 @@ const IndividualProjectData = [
       'Mongoose',
       'React-Spring'
     ],
-    githubLink: 'http://github.com/thomasjfoydel/projectone',
-    herokuLink: 'http://socketchat2019.herokuapp.com',
+    githubLink: 'https://github.com/ThomasFoydel/chat',
+    herokuLink: 'http://socketchat.xyz',
     screenCaptureFile: '../../img/chatappscreencap.gif',
     backgroundClass: 'chatappbackground'
   },
@@ -61,8 +61,8 @@ const IndividualProjectData = [
       'React-Spring',
       'JSON Web Token'
     ],
-    githubLink: 'http://github.com/thomasjfoydel/projectone',
-    herokuLink: 'http://mernstacksocialmedia.herokuapp.com',
+    githubLink: 'https://github.com/ThomasFoydel/socialmedia',
+    herokuLink: 'http://mernsocialmedia.xyz',
     screenCaptureFile: '../../img/socialmediascreencapture.gif',
     backgroundClass: 'socialmediabackground'
   }
