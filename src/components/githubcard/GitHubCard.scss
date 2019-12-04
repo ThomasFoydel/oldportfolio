@@ -11,9 +11,9 @@ $break-xxs: 650px;
   height: 100px;
   @media screen and (max-width: $break-xxs) {
     top: 35rem;
-    right: auto;
-    left: 50vw;
-    transform: translateX(-50%);
+    min-width: 35vw;
+    right: 50%;
+    transform: translateX(50%);
   }
 }
 

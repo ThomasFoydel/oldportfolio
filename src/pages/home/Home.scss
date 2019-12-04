@@ -121,7 +121,7 @@ $break-xxs: 650px;
   min-height: 80vh;
   overflow: hidden;
   @media screen and (max-width: $break-xxs) {
-    position: inherit;
+    // position: inherit;
     margin-top: 10rem;
     bottom: 6rem;
   }

@@ -7,11 +7,12 @@ $break-xxs: 650px;
   position: absolute;
   top: 14rem;
   left: 4rem;
-  min-width: 29vw;
+  width: 29vw;
   height: 100px;
   @media screen and (max-width: $break-xxs) {
+    min-width: 35vw;
     right: auto;
-    left: 50vw;
+    left: 50%;
     transform: translateX(-50%);
   }
 }

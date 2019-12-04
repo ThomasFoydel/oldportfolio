@@ -81,9 +81,6 @@ const IndividualProjectPage = ({ match }) => {
           <div className='individualprojectpageimganddesc'>
             <div className='individualprojectpagedescription'>
               <div className='individualprojectpagefeatures'>
-                {page === 'chatapp' &&
-                  'A live chat app built in MERN stack with socket.io: '}
-
                 {currentPage.description}
 
                 <br />
