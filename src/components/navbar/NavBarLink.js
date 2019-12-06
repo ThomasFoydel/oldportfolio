@@ -12,7 +12,6 @@ const NavBarLink = ({ linkName, isCurrentPage }) => {
   const animationProps = useSpring({
     background: isCurrentPage ? currentBackgrounds : notCurrentBackgrounds,
     width: isCurrentPage ? '23rem' : '14rem',
-    // textAlign: 'center',
     config: config.smooth
   });
   return (

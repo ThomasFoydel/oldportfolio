@@ -45,9 +45,8 @@ const ProjectPage = () => {
   return (
     <div className='projectpage-outercontainer'>
       <div className='projectpage-container'>
+        <div className='projectpage-grid-title'>recent projects</div>
         <div className='projectpage-grid'>
-          <div className='projectpage-grid-title'>recent projects</div>
-
           <Link to='/project/socialmediaapp'>
             <animated.div
               style={fadeInProps}

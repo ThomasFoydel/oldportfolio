@@ -40,12 +40,16 @@ $break-xxs: 650px;
   height: 26rem;
   width: 26rem;
   border-radius: 999px;
-  background: black;
+  background: rgb(126, 126, 126);
   color: white;
   text-align: center;
   margin-top: 14rem;
   margin-left: 12rem;
   margin-bottom: 5rem;
+  transition: background 1.1s cubic-bezier(0.6, -0.28, 0.735, 0.045);
+  &:hover {
+    background: rgb(19, 19, 19);
+  }
 
   .home-profilephototext {
     opacity: 0;
@@ -63,7 +67,7 @@ $break-xxs: 650px;
 
 .home-profilephoto {
   border-radius: 999px;
-  border: 1.3rem solid rgb(236, 236, 236);
+  // border: 1.3rem solid rgb(236, 236, 236);
   height: 26rem;
   width: 26rem;
 

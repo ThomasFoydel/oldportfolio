@@ -1,6 +1,7 @@
 import React, { useState, useContext } from 'react';
 import { Link } from 'react-router-dom';
 import NavBarLink from 'components/navbar/NavBarLink';
+import SmallNavBar from 'components/navbar/SmallNavBar';
 
 import { CTX } from 'context/Store';
 
@@ -21,36 +22,39 @@ const NavBar = () => {
   const currentPage = appState.currentPage;
 
   return (
-    <div className='navbar-container'>
-      <ul className='navbar'>
-        <Link onClick={setCurrentPage} name='home' to='/'>
-          <NavBarLink
-            linkName='Thomas Foydel'
-            isCurrentPage={currentPage === 'home'}
-          />
-        </Link>
+    <>
+      <div className='navbar-container'>
+        <ul className='navbar'>
+          <Link onClick={setCurrentPage} name='home' to='/'>
+            <NavBarLink
+              linkName='Thomas Foydel'
+              isCurrentPage={currentPage === 'home'}
+            />
+          </Link>
 
-        <Link onClick={setCurrentPage} name='projects' to='/projects'>
-          <NavBarLink
-            linkName='Projects'
-            isCurrentPage={currentPage === 'projects'}
-          />
-        </Link>
+          <Link onClick={setCurrentPage} name='projects' to='/projects'>
+            <NavBarLink
+              linkName='Projects'
+              isCurrentPage={currentPage === 'projects'}
+            />
+          </Link>
 
-        <Link onClick={setCurrentPage} name='contact' to='/contact'>
-          <NavBarLink
-            linkName='Contact'
-            isCurrentPage={currentPage === 'contact'}
-          />
-        </Link>
-        <Link onClick={setCurrentPage} name='about' to='/about'>
-          <NavBarLink
-            linkName='About'
-            isCurrentPage={currentPage === 'about'}
-          />
-        </Link>
-      </ul>
-    </div>
+          <Link onClick={setCurrentPage} name='contact' to='/contact'>
+            <NavBarLink
+              linkName='Contact'
+              isCurrentPage={currentPage === 'contact'}
+            />
+          </Link>
+          <Link onClick={setCurrentPage} name='about' to='/about'>
+            <NavBarLink
+              linkName='About'
+              isCurrentPage={currentPage === 'about'}
+            />
+          </Link>
+        </ul>
+      </div>
+      <SmallNavBar />
+    </>
   );
 };
 

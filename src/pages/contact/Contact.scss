@@ -1,11 +1,50 @@
-// .contact-outercontainer {
-//   &:hover {
-//     .contact-container {
-//       transition: clip-path 0.4s cubic-bezier(0.19, 1, 0.22, 1);
-//       clip-path: polygon(0 0, 85% 0, 60% 100%, 0 100%);
-//     }
-//   }
-// }
+$break-large: 1085px;
+$break-medium: 620px;
+.contact-outercontainer {
+  @media screen and (max-width: $break-medium) {
+    display: none;
+  }
+}
+
+.contactsmall-container {
+  display: none;
+
+  @media screen and (max-width: $break-medium) {
+    display: inherit;
+  }
+}
+
+.contactsmall-imagecontainer {
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(
+      180deg,
+      rgba(221, 247, 251, 0) 0%,
+      rgba(0, 0, 0, 0.18) 50%,
+      rgba(0, 0, 0, 0.4) 80%
+    ),
+    url('../../img/contactphone.jpg');
+  background-size: cover;
+  background-position: absolute;
+  background-position: bottom left;
+}
+
+.contactsmall-linkcontainer {
+  position: absolute;
+  top: 20rem;
+}
+
+.contactsmall-link {
+  margin-left: 1rem;
+  display: block;
+  z-index: 10;
+  transition: 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+  font-size: 5rem;
+  text-decoration: underline;
+  &:hover {
+    color: rgb(221, 10, 10);
+  }
+}
 
 .contact-container {
   min-height: 100vh !important;
@@ -17,11 +56,7 @@
     ),
     url('../../img/contactphone.jpg');
   background-size: cover;
-  background-position: absolute;
-
   background-position: center center;
-  //    clip-path: polygon(0 0, 85% 0, 60% 100%, 0 100%);
-  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
   color: #fff;
   top: 0;
   width: 100%;
@@ -37,17 +72,8 @@
     rgb(161, 161, 161) 50%,
     rgb(83, 83, 83) 90%
   );
-  //   background-image: linear-gradient(
-  //       180deg,
-  //       rgba(221, 247, 251, 0) 0%,
-  //       rgba(0, 0, 0, 0.18) 50%,
-  //       rgba(0, 0, 0, 0.4) 80%
-  //     ),
-  // url('../../img/homebackground3.jpg');
   background-size: cover;
   background-position: absolute;
-  //   clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
-  //   clip-path: polygon(0 0, 90% 0, 80% 100%, 0 100%);
   color: #fff;
   top: 0;
   width: 100%;
@@ -55,7 +81,6 @@
 }
 
 .contact-listcontainer {
-  margin-top: 8rem;
   left: 50%;
   transform: translate(-50%);
   position: absolute;
@@ -65,7 +90,11 @@
   position: absolute;
   right: 1rem;
   color: white;
-  top: 30rem;
+  // top: 40%;
+  bottom: 10%;
+  @media screen and (max-width: $break-large) {
+    bottom: 0%;
+  }
 }
 
 .contact-listitem {
@@ -74,6 +103,10 @@
   text-align: right;
   font-size: 3rem;
   letter-spacing: 0.3rem;
+  @media screen and (max-width: 925px) {
+    font-size: 2.8rem;
+    letter-spacing: 0.2rem;
+  }
   // transition: text-decoration 0.4s;
 
   // &:before {
@@ -106,6 +139,9 @@
   font-weight: 500;
   margin-top: 14.5rem;
   cursor: default;
+  @media screen and (max-width: $break-large) {
+    display: none;
+  }
 }
 
 .individualcontactname {

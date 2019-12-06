@@ -1,6 +1,7 @@
 $break-large: 1400px;
 $break-medium: 1200px;
 $break-small: 1041px;
+$break-xs: 780px;
 $break-xxs: 535px;
 
 // .projectcard-container {
@@ -27,7 +28,8 @@ $break-xxs: 535px;
 
 .projectpage-container {
   // margin-top: 1rem;
-  height: 95vh;
+  // height: 95vh;
+  height: 100vh;
   background-image: linear-gradient(
       180deg,
       rgba(221, 247, 251, 0) 0%,
@@ -37,7 +39,7 @@ $break-xxs: 535px;
     url('../../img/homebackground3bw.jpg');
   background-size: cover;
   background-position: absolute;
-  clip-path: polygon(0 0vh, 100% 0, 100% 80vh, 0 100%);
+  // clip-path: polygon(0 0vh, 100% 0, 100% 80vh, 0 100%);
   color: #fff;
   padding: 0 3rem 0 3rem;
   z-index: 2;
@@ -84,27 +86,30 @@ $break-xxs: 535px;
 
 .projectpage-grid {
   display: grid;
-  // grid-template-columns: repeat(3, 1fr);
-  // grid-template-rows: repeat(2, 1fr);
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   grid-template-rows: 1fr;
 
-  grid-column-gap: 0px;
+  grid-column-gap: 10px;
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
   top: 25rem;
   z-index: 8;
+  // @media screen and (max-width: $break-xs) {
+  //   grid-template-columns: 1fr;
+  //   grid-template-rows: repeat(3, 1fr);
+  // }
 }
 
 .projectpage-grid-title {
-  grid-area: 1 / 2 / 2 / 3;
   font-size: 4.5rem;
+  width: 43rem;
+  text-align: center;
   height: 20rem;
-  margin-top: -10rem;
+  padding-top: 18rem;
   letter-spacing: 0.8rem;
-  margin-left: -10rem;
-  margin-right: -11rem;
+  margin-left: 50%;
+  transform: translateX(-50%);
   text-align: center;
   white-space: nowrap;
   cursor: default;

@@ -1,4 +1,7 @@
+$break-medium: 650px;
+
 .navbar-container {
+  display: inherit;
   position: fixed;
   z-index: 5;
   background: rgba(54, 54, 54, 0.404);
@@ -7,6 +10,65 @@
   border-bottom: 1px solid rgba(168, 168, 168, 0.596);
   top: 0;
   backdrop-filter: blur(0.6rem);
+  @media screen and (max-width: $break-medium) {
+    display: none;
+  }
+}
+
+.smallnavbar-container {
+  // display: none;
+  position: fixed;
+  z-index: 5;
+  background: rgba(54, 54, 54, 0.804);
+  width: 100%;
+  min-height: 3rem;
+  border-bottom: 1px solid rgba(168, 168, 168, 0.596);
+  top: 0;
+  backdrop-filter: blur(0.6rem);
+  list-style: none;
+  display: flex;
+  top: 0;
+  padding-left: 1rem;
+  padding-top: 0.9rem;
+
+  @media screen and (min-width: $break-medium + 1) {
+    display: none;
+  }
+}
+
+.smallnavbar-barsicon {
+  width: 2rem;
+  height: 2rem;
+  position: absolute;
+  right: 2rem;
+  top: 1.7rem;
+  cursor: pointer;
+  transition: filter 0.2s cubic-bezier(0.47, 0, 0.745, 0.715);
+  &:hover {
+    filter: brightness(0.7);
+  }
+}
+
+.smallnavbargraybar {
+  filter: brightness(0.1);
+  transition: filter 0.2s cubic-bezier(0.47, 0, 0.745, 0.715);
+  &:hover {
+    filter: brightness(0.2);
+  }
+}
+
+.smallnavbar-link {
+  display: block;
+  color: #eee;
+  font-size: 2.4rem;
+  transition: filter 0.2s cubic-bezier(0.47, 0, 0.745, 0.715);
+  &:hover {
+    filter: brightness(0.7);
+  }
+}
+
+.currentSmallNavBarPage {
+  color: rgb(185, 37, 37);
 }
 
 .navbar {
