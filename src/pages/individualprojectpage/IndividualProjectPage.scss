@@ -1,3 +1,5 @@
+$break-medium: 650px;
+
 .individualprojectpagecontainer {
   text-align: center;
   margin-left: 50%;
@@ -44,6 +46,9 @@
   padding-right: 2rem;
   overflow-x: hidden;
   margin-top: 3rem;
+  @media screen and (max-width: $break-medium) {
+    margin-top: 6rem;
+  }
 }
 
 .individualprojectpagetitle {

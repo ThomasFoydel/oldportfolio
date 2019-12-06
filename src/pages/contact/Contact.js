@@ -28,7 +28,7 @@ const Contact = () => {
         <div className='contactsmall-linkcontainer'>
           <a
             className='contactsmall-link'
-            href='https://www.linkedin.com/in/thomas-foydel-63aa74110/'
+            href='https://www.linkedin.com/in/thomasfoydel'
             target='_blank'
             rel='noopener noreferrer'
           >

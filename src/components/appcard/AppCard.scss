@@ -1,3 +1,5 @@
+$break-xxxs: 480px;
+
 .socialmediacard,
 .chatappcard {
   width: 23rem;
@@ -9,6 +11,10 @@
 
   background-repeat: no-repeat;
   background-size: contain;
+  @media screen and (max-width: $break-xxxs) {
+    width: 17rem;
+    height: 14rem;
+  }
 }
 
 .socialmediacard {

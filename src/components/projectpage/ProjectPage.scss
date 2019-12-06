@@ -3,6 +3,7 @@ $break-medium: 1200px;
 $break-small: 1041px;
 $break-xs: 780px;
 $break-xxs: 535px;
+$break-xxxs: 480px;
 
 // .projectcard-container {
 //   position: absolute;
@@ -95,10 +96,10 @@ $break-xxs: 535px;
   transform: translateX(-50%);
   top: 25rem;
   z-index: 8;
-  // @media screen and (max-width: $break-xs) {
-  //   grid-template-columns: 1fr;
-  //   grid-template-rows: repeat(3, 1fr);
-  // }
+  @media screen and (max-width: $break-xxs) {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, 1fr);
+  }
 }
 
 .projectpage-grid-title {
@@ -106,13 +107,20 @@ $break-xxs: 535px;
   width: 43rem;
   text-align: center;
   height: 20rem;
-  padding-top: 18rem;
+  padding-top: 19rem;
   letter-spacing: 0.8rem;
   margin-left: 50%;
   transform: translateX(-50%);
   text-align: center;
   white-space: nowrap;
+  line-height: 3rem;
   cursor: default;
+  @media screen and (max-width: $break-xxxs) {
+    font-size: 2.3rem;
+    width: 27.3rem;
+    white-space: inherit;
+    padding-top: 18rem;
+  }
 }
 
 .projectpage-gridproject1 {

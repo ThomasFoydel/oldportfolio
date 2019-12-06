@@ -76,7 +76,7 @@ const IndividualProjectPage = ({ match }) => {
             className='individualprojectpage-hidesidebarbutton'
             onClick={() => setDisplayInfoBar(!displayInfoBar)}
           >
-            hide sidebar
+            hide info box
           </div>
           <div className='individualprojectpageimganddesc'>
             <div className='individualprojectpagedescription'>
