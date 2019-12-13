@@ -1,10 +1,12 @@
 $break-xxxs: 480px;
 
 .socialmediacard,
-.chatappcard {
-  width: 23rem;
-  height: 18.5rem;
+.chatappcard,
+.flashcardappcard {
+  width: 20rem;
+  height: 15.5rem;
   background-position: center center;
+  margin: 1rem;
   box-shadow: 0px 10px 30px -5px rgba(0, 0, 0, 0.3);
   transition: box-shadow 0.5s;
   will-change: transform;
@@ -23,6 +25,10 @@ $break-xxxs: 480px;
 
 .chatappcard {
   background-image: url('../../img/chatapp.png');
+}
+
+.flashcardappcard {
+  background-image: url('../../img/flashcardapp.png');
 }
 
 .socialmediacard:hover {

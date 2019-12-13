@@ -44,8 +44,6 @@ const IndividualProjectPage = ({ match }) => {
     config: config.wobbly
   });
 
-  console.log(' FILE: ', currentPage.screenCaptureFile);
-
   return (
     <div
       className={`individualprojectpagecontainer ${currentPage.backgroundClass}`}
@@ -123,10 +121,12 @@ const IndividualProjectPage = ({ match }) => {
                     style={{ height: '5rem', marginRight: '1.5rem' }}
                     src={NodeIcon}
                   />
-                  <img
-                    style={{ height: '5rem', marginRight: '1rem' }}
-                    src={SocketIOIcon}
-                  />
+                  {currentPage.matchParam !== 'flashcardapp' && (
+                    <img
+                      style={{ height: '5rem', marginRight: '1rem' }}
+                      src={SocketIOIcon}
+                    />
+                  )}
                 </div>
               </div>
             </div>

@@ -27,12 +27,20 @@ const ProjectPage = () => {
   }, []);
   const [socialMediaHover, setSocialMediaHover] = useState(false);
   const [chatAppHover, setChatAppHover] = useState(false);
-
+  const [flashCardHover, setFlashCardHover] = useState(false);
   const handleSocialMediaEnter = () => {
     setSocialMediaHover(true);
   };
   const handleSocialMediaLeave = () => {
     setSocialMediaHover(false);
+  };
+
+  const handleFlashCardEnter = () => {
+    setFlashCardHover(true);
+  };
+
+  const handleFlashCardLeave = () => {
+    setFlashCardHover(false);
   };
 
   const handlePlaceholderEnter = () => {
@@ -74,7 +82,25 @@ const ProjectPage = () => {
               <AppCard cardClass='chatappcard' hover={chatAppHover} />
             </animated.div>
           </Link>
-          <div className='projectpage-gridproject3' />
+          {/* <div className='projectpage-gridproject3' />
+          
+     */}
+
+          <Link to='/project/flashcardapp'>
+            <animated.div
+              className='projectpage-gridproject3'
+              onMouseEnter={handleFlashCardEnter}
+              onMouseLeave={handleFlashCardLeave}
+              style={fadeInProps}
+            >
+              <ProjectCardTitle
+                hover={flashCardHover}
+                content='Flash Card App'
+              />
+
+              <AppCard cardClass='flashcardappcard' hover={flashCardHover} />
+            </animated.div>
+          </Link>
         </div>
       </div>
     </div>

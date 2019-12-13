@@ -65,6 +65,25 @@ const IndividualProjectData = [
     herokuLink: 'http://mernsocialmedia.xyz',
     screenCaptureFile: '../../img/socialmediascreencapture.gif',
     backgroundClass: 'socialmediabackground'
+  },
+  {
+    matchParam: 'flashcardapp',
+    title: 'Flash Card Project',
+    description: 'A flash card app built in MERN stack ',
+    featuresList: [
+      'create new flash cards',
+      'create new subjects',
+      'drop cards or subjects',
+      'register/login',
+      'save cards to database',
+      'log in again later and get back to studying'
+    ],
+    technologiesList1: ['Node', 'React', 'Redux', 'Express', 'Mongo DB'],
+    technologiesList2: ['SCSS', 'Mongoose', 'React-Spring', 'JSON Web Token'],
+    githubLink: 'https://github.com/ThomasFoydel/flashcards',
+    herokuLink: 'https://mern-flashcards.herokuapp.com/',
+    screenCaptureFile: '../../img/flashcardscreencapture.gif',
+    backgroundClass: 'flashcardbackground'
   }
 ];
 
