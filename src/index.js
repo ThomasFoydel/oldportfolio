@@ -8,7 +8,8 @@ import Store from 'context/Store';
 ReactDOM.render(
   <Store>
     <Router>
-      <App />
+      {/* <App /> */}
+      TESTING TESTING
     </Router>
   </Store>,
   document.getElementById('root')
